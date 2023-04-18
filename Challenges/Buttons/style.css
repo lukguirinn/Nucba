@@ -1,0 +1,128 @@
+/* Primer Boton */
+.button1 {
+  border: 0;
+  background-image: linear-gradient(150deg, #9500ff, #09f, #00ddff);
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  font-size: 18px;
+  padding: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button1 span {
+  background-color: #111;
+  padding: 16px 24px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.button1:hover span {
+  background: none;
+}
+
+.button1:active {
+  transform: scale(0.9);
+}
+
+/* Segundo Boton */
+.bt2 {
+  margin-top: 50px; /* esto lo puse para separar los botones */
+  background-color: transparent;
+  font-weight: bolder;
+  color: #444;
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  border: 2px soolid #eee;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 1s;
+  box-shadow: 0.5rem 0.5rem 1rem #ccc, -0.5rem -0.5rem 1rem #fff;
+}
+.bt2:hover {
+  box-shadow: 0.5rem 0.5rem 1rem #fff, -0.2rem -0.2rem 1rem #ccc;
+}
+.bt2:active {
+  box-shadow: inset 0.5rem 0.5rem 1rem #ccc, inset -0.5rem -0.5rem 1rem #fff;
+}
+
+/* Tercer Boton */
+.bt3 {
+  display: flex;
+  flex-direction: column;
+  margin: 35px 0;
+  background: #111;
+  cursor: pointer;
+  border: none;
+  padding: 16px 32px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  border-radius: 12px;
+}
+.bt3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    red,
+    blue,
+    deeppink,
+    blue,
+    red,
+    blue,
+    deeppink,
+    blue
+  );
+  background-size: 800%;
+  border-radius: 10px;
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+}
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* Button 4 */
+.bt4 {
+  display: flex;
+  flex-direction: column;
+  width: 3rem;
+  height: 3rem;
+  border: 0;
+  background: transparent;
+  gap: 0.65rem;
+}
+.bt4 div {
+  background: #111;
+  height: 2px;
+  width: 100%;
+  border-radius: 5px;
+  transition: all 0.2s;
+  transform-origin: left;
+}
+.bt4:hover div:first-child {
+  transform: rotate(45deg);
+}
+.bt4:hover div:nth-child(2) {
+  opacity: 0;
+}
+.bt4:hover div:last-child {
+  transform: rotate(-45deg);
+}
