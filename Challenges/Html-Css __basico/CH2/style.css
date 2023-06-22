@@ -1,0 +1,218 @@
+:root {
+  --Blanco: #ffffff;
+  --Negro: #000000;
+  --AzulOscuro: #151a41;
+  --Rosa: #ff0099;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(223, 223, 223);
+}
+
+.Feed-Container {
+  margin: auto;
+  margin-top: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 491px;
+  width: 460px;
+  background: var(--Blanco);
+  border-radius: 10px;
+  position: relative;
+}
+
+.Feed-Container i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 20px;
+  padding: 10px;
+  font-size: 1.1em;
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 100px;
+  color: rgb(168, 168, 168);
+  cursor: pointer;
+}
+
+.Feed-Container__Content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 330px;
+  gap: 30px;
+}
+
+.Feed-Container__Title {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: var(--AzulOscuro);
+}
+
+.Feed-Container__Boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.Feed-Container__Boxes div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 60px;
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Feed-Container__Boxes div:nth-child(1):hover {
+  background: var(--Rosa);
+  color: var(--Blanco);
+  box-shadow: 0 2px 5px 0px rgb(53, 53, 53);
+  transition: all 0.5s ease;
+}
+
+.Feed-Container__Boxes div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 60px;
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Feed-Container__Boxes div:nth-child(2):hover {
+  background: var(--Rosa);
+  color: var(--Blanco);
+  box-shadow: 0 2px 5px 0px rgb(53, 53, 53);
+  transition: all 0.5s ease;
+}
+
+.Feed-Container__Boxes div:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 60px;
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Feed-Container__Boxes div:nth-child(3):hover {
+  background: var(--Rosa);
+  color: var(--Blanco);
+  box-shadow: 0 2px 5px 0px rgb(53, 53, 53);
+  transition: all 0.5s ease;
+}
+
+.Feed-Container__Boxes div:nth-child(4) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 60px;
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Feed-Container__Boxes div:nth-child(4):hover {
+  background: var(--Rosa);
+  color: var(--Blanco);
+  box-shadow: 0 2px 5px 0px rgb(53, 53, 53);
+  transition: all 0.5s ease;
+}
+
+.Feed-Container__Boxes div:nth-child(5) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 60px;
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Feed-Container__Boxes div:nth-child(5):hover {
+  background: var(--Rosa);
+  color: var(--Blanco);
+  box-shadow: 0 2px 5px 0px rgb(53, 53, 53);
+  transition: all 0.5s ease;
+}
+
+.Feed-Container__Boxes div:nth-child(6) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 60px;
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Feed-Container__Boxes div:nth-child(6):hover {
+  background: var(--Rosa);
+  color: var(--Blanco);
+  box-shadow: 0 2px 5px 0px rgb(53, 53, 53);
+  transition: all 0.5s ease;
+}
+
+.Feed-Container__Info {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.Feed-Container__Info div span {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Feed-Container__Checkbox {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  font-size: 1.1em;
+  gap: 10px;
+}
+
+.Feed-Container__Checkbox input {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.Separator {
+  height: 2px;
+  width: 100%;
+  background: rgb(211, 211, 211);
+}
+
+.Feed-Container__Button {
+  height: 60px;
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 10px;
+  background: var(--Blanco);
+  font-weight: 500;
+  font-size: 1.1em;
+  cursor: pointer;
+}
